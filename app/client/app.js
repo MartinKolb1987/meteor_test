@@ -1,3 +1,9 @@
+// Router
+Router.map(function() {
+  this.route('home', {path: '/'});
+  this.route('home', {path: '/about'});
+});
+
 // Declare client Movies collection
 Movies = new Meteor.Collection("movies");
  
