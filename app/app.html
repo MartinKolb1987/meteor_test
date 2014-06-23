@@ -1,3 +1,7 @@
+<head>
+	<link rel="stylesheet" href="stylesheets/main.css" />
+</head>
+
 <body>
   <h1>Movies</h1>
   <hr>
@@ -10,8 +14,17 @@
     <ul>
     {{#each movies}}
     <li class="item">
-        {{title}} -- {{director}} 
-        <button class="remove-item">delete</button>
+    	<div class="edit-fields hide">
+        	<input type="text" name="title" value="{{title}}">
+        	<input type="text" name="director" value="{{director}}">
+        	<button class="submit-edit-save">speichern</button>
+        	<button class="submit-cancel">abbrechen</button>
+    	</div>
+    	<div class="show-fields">
+	        <span class="show">{{title}} -- {{director}}</span>
+	        <button class="edit-item">edit</button>
+	        <button class="remove-item">delete</button>
+    	</div>
     </li>
     {{/each}}
     </ul>
