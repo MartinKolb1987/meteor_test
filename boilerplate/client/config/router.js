@@ -1,6 +1,6 @@
 Router.configure({
   layoutTemplate: 'home',
-  notFoundTemplate: '404'
+  notFoundTemplate: 'not_found'
   // yieldTemplates: {
   //   'header': { to: 'header' },
   //   'footer': { to: 'footer' }
