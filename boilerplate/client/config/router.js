@@ -1,5 +1,5 @@
 Router.configure({
-  layoutTemplate: 'home',
+  layoutTemplate: 'app',
   notFoundTemplate: 'not_found'
   // yieldTemplates: {
   //   'header': { to: 'header' },
